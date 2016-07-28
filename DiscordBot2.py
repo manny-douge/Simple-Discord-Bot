@@ -33,6 +33,7 @@ async def on_message(message):
     if '!troll' in message.content.lower():
         await bot.send_message(message.channel, "http://puu.sh/k0Hki.jpg",
                                tts=False)
+    #Iterates through mentioned users and greets them
     if 'hey' in message.content.lower():
         mentioned=message.mentions
         if not mentioned:
