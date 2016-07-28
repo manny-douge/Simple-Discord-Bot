@@ -18,7 +18,8 @@ async def on_message(message):
         name = message.author.name.lower()
         lolname=message.content.lower()[20:]
         leaguedict[name]=lolname
-
+    
+    #Parses through JSON file to retrieve the summoner id
     elif "league id" in message.content.lower():
         name=message.author.name.lower()
         summoner=leaguedict[name]
