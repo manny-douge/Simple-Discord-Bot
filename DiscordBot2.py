@@ -5,7 +5,7 @@ import requests
 
 if not discord.opus.is_loaded():
     discord.opus.load_opus('opus')
-#Instantiate dictionary for later use
+#Instantiate dictionary for later use.
 leaguedict={}
 
 bot = discord.Client()
